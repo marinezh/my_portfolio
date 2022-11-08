@@ -16,13 +16,15 @@ const scrollFunction = () => {
         backButton.style.display = 'none'
     }
 };
+
 window.onscroll = function () {
     scrollFunction();
 };
+
 const getToTop = () => {
     console.log('clicked');
     document.body.scrollTop = 0;
-    document.documentElement.ScrollTop = 0;
+    document.documentElement.scrollTop = 0;
 };
 
 const mobMenu = () => {
