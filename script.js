@@ -5,9 +5,7 @@ const nav = document.querySelector('nav');
 let links = document.querySelectorAll('nav ul li a');
 
 
-window.onscroll = function () {
-    scrollFunction();
-};
+
 
 const scrollFunction = () => {
     if (document.body.scroll > 50 || document.documentElement.scrollTop > 50) {
@@ -18,7 +16,9 @@ const scrollFunction = () => {
         backButton.style.display = 'none'
     }
 };
-
+window.onscroll = function () {
+    scrollFunction();
+};
 const getToTop = () => {
     console.log('clicked');
     document.body.scrollTop = 0;
